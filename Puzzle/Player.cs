@@ -237,19 +237,6 @@ public class Player : MonoBehaviour
         Gizmos.DrawWireCube(targetWorld, (Vector3)(collider2d != null ? collider2d.bounds.size * 0.9f : Vector3.one));
     }
 
-    public void HaltAndSnap(bool snapToGrid)
-    {
-        StopAllCoroutines();
-
-        animator.SetBool("IsMoving", false);
-        isMoving = false;
-
-        if (snapToGrid)
-        {
-            SnapToGrid();
-        }
-    }
-
     public void SetisClear(bool flag)
     {
         isClear = flag;

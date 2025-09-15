@@ -18,7 +18,7 @@ public class Key : MonoBehaviour
                 color.a = 0;
                 renderer.color = color;
 
-                GetComponent<CircleCollider2D>().enabled = false;
+                GetComponent<BoxCollider2D>().enabled = false;
 
                 gateManager.CheckGate(number);
             }
